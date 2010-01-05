@@ -1,0 +1,7 @@
+#! /usr/bin/env ruby
+
+$LOAD_PATH << File.dirname( __FILE__ ) + '/../lib' if File.exist?( File.dirname( __FILE__ ) + '/../lib' )
+require 'rubygems'
+require 'xig_installer'
+
+XigInstaller.new.run
