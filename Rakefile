@@ -15,9 +15,9 @@ include FileUtils
 NAME              = "xig_installer"
 AUTHOR            = "wtnabe"
 EMAIL             = "wtnabe@gmail.com"
-DESCRIPTION       = ""
+DESCRIPTION       = "Installer for net-irc example irc gateways"
 RUBYFORGE_PROJECT = "xig_installer"
-HOMEPATH          = "http://#{RUBYFORGE_PROJECT}.rubyforge.org"
+HOMEPATH          = "http://github.com/wtnabe/xig_installer"
 BIN_FILES         = %w( xig_installer )
 
 VERS              = XigInstaller::VERSION
