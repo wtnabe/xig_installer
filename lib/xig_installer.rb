@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
+require 'rbconfig'
 require 'pathname'
 require 'optparse'
 require 'erb'
 include FileUtils::Verbose
+RbConfig = Config unless defined? RbConfig
 
 class XigInstaller
   VERSION    = '0.0.1'
-  TARGET_DIR = '/usr/local/bin'
+  TARGET_DIR = RbConfig::CONFIG['bindir']
   XIG_GLOB   = '*ig.rb'
 
   class CommandNotExist < StandardError ; end
