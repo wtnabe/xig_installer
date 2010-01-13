@@ -138,7 +138,7 @@ class XigInstaller
 
   def _cmd_list_update
     _cmd_list_installed.reject { |e|
-      different?( name )
+      !different?( e )
     }
   end
 
