@@ -134,7 +134,7 @@ class XigInstallerTest < Test::Unit::TestCase
    end
   def test_parser
     assert( @obj.parser.parse( %w( help ) ) == %w( help ) )
-    assert( @obj.target_dir == '/usr/local/bin' )
+    assert( @obj.target_dir == RbConfig::CONFIG['bindir'] )
     # -t
     target = (%w( /opt/local/bin /sw/local/bin ) +
               [File.expand_path(File.dirname( __FILE__ ))]).find { |e|

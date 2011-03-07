@@ -3,11 +3,12 @@ require 'rbconfig'
 require 'pathname'
 require 'optparse'
 require 'erb'
+require 'fileutils'
 include FileUtils::Verbose
 RbConfig = Config unless defined? RbConfig
 
 class XigInstaller
-  VERSION    = '0.0.2'
+  VERSION    = '0.0.3'
   TARGET_DIR = RbConfig::CONFIG['bindir']
   XIG_GLOB   = '*ig.rb'
 
